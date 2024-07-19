@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .analysis {
+            white-space: pre-wrap; /* Preserva as quebras de linha */
+        }
+    </style>
+</head>
+<body>
+    <div class="container bg-light border p-3 shadow rounded mt-5">
+        <div style="background-color: #01796F; border-radius: 4px;">
+            <img src="{{ url_for('static', filename='logo2.png') }}" alt="Logo" style="width: 100%;" height="70">
+        </div>
+        <p>
+        <h4 class="text-center">Análise Critica dos Indicadores {{entidade_descricao}} </h4>
+        <p>
+        <div class="analysis">
+            {{ analysis }}
+        </div>
+       
+    </div>
+</body>
+</html>
