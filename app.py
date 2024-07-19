@@ -212,7 +212,7 @@ def get_entidades():
     entidades_list = [{"id": row[0], "descricao": row[1]} for row in entidades]
     
     # Printar para depuração
-    print(entidades_list)
+    #print(entidades_list)
     
     return jsonify(entidades_list)
        
